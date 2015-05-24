@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>Конкурс на самое безбашеное путешествие с Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+	  <div class="wraper">
+	    <div class="logo"><a href="/">Pink</a></div>
+		<a class="respns-nav-btn" href=""><i class="icon-reorder"></i></a>
+	    <div class="nav-wrapper">
+	      <nav class="mobile-menu">
+		    <a class="hide-menu" href=""><i class="icon-close"></i></a>
+		    <ul class="menu">
+			  <li><a href="">Информация</a></li>
+			  <li><a href="">Возможности</a></li>
+			  <li><a href="">Отзывы</a></li>
+			  <li><a href="">Стоимость</a></li>
+			</ul>
+		  </nav>
+	    </div>
+	  </div>
+	</header>
+	<main>
+	  <section class="page-title">
+	    <div class="wrapper">
+	      <h1>Конкурс на самое безбашеное путешествие с Пинк</h1>
+		</div>
+	  </section>
+	  <div class="wrapper">
+	    <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </p>
+		<form>
+		  <label for="name">Имя: *</label>
+		  <input id="name" name="name" type=text placeholder="Введите ваше имя" required>
+		  <label for="lname">Фамилия: *</label>
+		  <input id="lname" name="last-name" type=text placeholder="Укажите фамилию" required>
+		  <label for="fname">Отчество:</label>
+		  <input id="fname" name="father-name" type=text placeholder="Ну и отчество тоже">
+		  <fieldset>
+		  <legend>С каким приложением путешествовали? *</legend>
+		  <input id="app-ios" name="application" type="radio" value="ios"><label for="app-ios">Pink для iOS</label>
+		  <input id="app-andr" name="application" type="radio" value="andr"><label for="app-andr">Pink на Android</label>
+		  <input id="app-wind" name="application" type="radio" value="wind"><label for="app-wind">Windows Phone</label>
+		  </fieldset>
+		  <fieldset>
+		  <legend>Когда вы путешествовали? *</legend>
+		  <input id="depart" name="departure" type="text" value="1 апреля 2015">
+		  <label for="depart">дата выезда</label>
+		  <input id="duratn" name="duration" type="text" value="10 дней">
+		  <label for="duratn">Продолжительность</label>
+		  <input id="arrvl" name="arrival" type="text" value="1 апреля 2015">
+		  <label for="arrvl">Дата Возвращения</label>
+		  </fieldset>
+		  <fieldset>
+		  <legend>Количество попутчиков *</legend>
+		  <input name="fellows" type="text" value="2 чел">
+		  <hr>		  
+		  <label for="num-1">№</label> <input id="num-1" name="number-1" type="text" value="1" readonly>
+		  <label for="name-1">Имя: *</label> <input id="name-1" name="name-1" type="text" placeholder="Введите ваше имя">
+		  <label for="lname-1">ПРОЗВИЩЕ:</label> <input id="lname-1" name="lname-1" type="text" placeholder="Ну как же без этого!">		  
+		  <label for="num-2">№</label> <input id="num-2" name="number-2" type="text" value="2" readonly>
+		  <label for="name-2">Имя: *</label> <input id="name-2" name="name-2" type="text" placeholder="Введите ваше имя">
+		  <label for="lname-2">ПРОЗВИЩЕ:</label> <input id="lname-2" name="lname-2" type="text" placeholder="Ну как же без этого!">		  
+		  </fieldset>
+		  <fieldset>
+		  <legend>Ваши безбашенные достижения в путешествии</legend>		  
+		  <input type="checkbox" id="achieve-shark" name="achieve-shark" checked><label for="achieve-shark">Сделал селфи с акулой</label>
+		  <input type="checkbox" id="achieve-beach" name="achieve-beach" checked><label for="achieve-beach">Обгорел на пляже</label>
+		  <input type="checkbox" id="achieve-chak" name="achieve-chak"><label for="achieve-chak">Видел Чака Норриса</label>
+		  <input type="checkbox" id="achieve-gifts" name="achieve-gifts"><label for="achieve-gifts">Накупил сувениров</label>
+		  <input type="checkbox" id="achieve-tower" name="achieve-tower" checked><label for="achieve-tower">Удержал башню</label>
+		  <input type="checkbox" id="achieve-hotel" name="achieve-hotel"><label for="achieve-hotel">Разгромил отель</label>
+		  </fieldset>
+		  <fieldset>
+		  <legend>ВАШИ ФОТОГРАФИИ из поездки *</legend>		  
+		  <input type="file" name="photo" enctype="multipart/form-data" accept="image/*" multiple>
+		  <hr>
+		  <div class="pict-upload"><img src="img/btn-del-pic.png" alt="удалить"><img src="img/img-1.jpg" alt="IMG-1.JPG">IMG-1.JPG</div>
+		  <div class="pict-upload"><img src="img/btn-del-pic.png" alt="удалить"><img src="img/img-2.jpg" alt="IMG-2.JPG">IMG-2.JPG</div>
+		  <div class="pict-upload"><img src="img/btn-del-pic.png" alt="удалить"><img src="img/img-3.jpg" alt="IMG-3.JPG">IMG-3.JPG</div>
+		  <div class="pict-upload"><img src="img/btn-del-pic.png" alt="удалить"><img src="img/img-4.jpg" alt="IMG-4.JPG">IMG-4.JPG</div>
+		  <div class="pict-upload"><img src="img/btn-del-pic.png" alt="удалить"><img src="img/img-5.jpg" alt="IMG-5.JPG">IMG-5.JPG</div>
+		  <div class="pict-upload"><img src="img/btn-del-pic.png" alt="удалить"><img src="img/img-6.jpg" alt="IMG-6.JPG">IMG-6.JPG</div>
+		  <div class="pict-upload"><img src="img/btn-del-pic.png" alt="удалить"><img src="img/img-7.jpg" alt="IMG-7.JPG">IMG-7.JPG</div>
+		  <div class="pict-upload"><img src="img/btn-del-pic.png" alt="удалить"><img src="img/img-8.jpg" alt="IMG-8.JPG">IMG-8.JPG</div>
+		  </fieldset>
+		  <input type="submit" id="submit-form" name="submit-form" value="Отправить форму">  
+		  <p>* — обязательные поля</p>
+		  
+		</form>
+	    
+	  </div>	   
+	</main>
+	<footer class="page-footer">
+      <div class="wrapper">	
+	    <div class="footer-logo"><img src="img/footer-logo.png" alt="Pink logo"></div>
+	    <div class="social-btns">
+	      <a class="social-btn btn-tw" href="">Twitter</a>
+		  <a class="social-btn btn-fb" href="">Facebook</a>
+		  <a class="social-btn btn-yt" href="">YouTube</a>
+	    </div>
+	    <div class="copyright">Разработано <a href=""><img src="images/logo-html-academy.png" alt="HTML Academy"></a></div>
+	  </div>
+	</footer>
+  </body>  
+	
