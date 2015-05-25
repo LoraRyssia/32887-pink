@@ -7,80 +7,84 @@
   </head>
   <body>
     <header class="page-header">
-	  <div class="wraper">
-	    <div class="logo"><a href="/">Pink</a></div>
-		<a class="respns-nav-btn" href=""><i class="icon-reorder"></i></a>
-	    <div class="nav-wrapper">
-	      <nav class="mobile-menu">
-		    <a class="hide-menu" href=""><i class="icon-close"></i></a>
-		    <ul class="menu">
+	  <div class="page-header__inner">
+	    <div class="page-header__logo-wrap">
+		  <a class="page-header__logo-link" href="/">
+		    <img src="img/logo.svg" alt="Pink">
+		  </a>
+		</div>		
+	    <div class="page-header__nav-wrap">
+	      <nav class="page-header__nav-menu">
+		    <a class="page-header__menu-toggle page-header__nav-menu-toggle--close" href=""></a>
+		    <ul class="page-header__menu-list">
 			  <li><a href="">Информация</a></li>
 			  <li><a href="">Возможности</a></li>
 			  <li><a href="">Отзывы</a></li>
 			  <li><a href="">Стоимость</a></li>
-			</ul>
+			</ul>			
 		  </nav>
 	    </div>
 	  </div>
 	</header>
+	
 	<main>
+	
 	  <section class="page-title">
-	    <div class="wrapper">
-	      <h1>Блог путешественников, пользователей Пинк</h1>
+	    <div class="page-title__inner">
+	      <h1 class="page-title__text">Блог путешественников, пользователей Пинк</h1>
 		</div>
 	  </section>
-	  <div class="wrapper">
-	    <article class="article-blog">
-		  <header class="article-title">
-		    <h2>Антон и Надя в Тайланде</h2>
-			<div class="article-time">Опубликовано: 6 месяцев назад</div>
-		  </header>
-		  <p>Читайте рассказ о том, как семейная пара посещала Тайланд, стараясь максимально избегать избитых туристических мест и районов.
-		  </p>
-		</article>
-		<article class="article-blog">
-		  <header class="article-title">
-		    <h2>Гастрольный тур «Кубанских борщеваров»</h2>
-			<div class="article-time">Опубликовано: 5 лет назад</div>
-		  </header>
-		  <p>Возрождение культурных традиций уже не за горами. Фолк-металл-рэп-группа из столицы Кубани провела весь год в гастролях по России и ближнему (а также среднему) зарубежью.
-		  </p>
-		</article>
-		<article class="article-blog">
-		  <header class="article-title">
-		    <h2>Чета Болонских в Париже</h2>
-			<div class="article-time">Опубликовано: 100 лет назад</div>
-		  </header>
-		  <p>Невероятные приключения русских во Франции. Интриги, предательства, погони и, разумеется, убийства. Читайте криминально-исторический трактат в двух томах.
-		  </p>
-		</article>
-		<article class="article-blog">
-		  <header class="article-title">
-		    <h2>Путешествие на яхте сеньора Христофора</h2>
-			<div class="article-time">Опубликовано: 523 года назад</div>
-		  </header>
-		  <p>Группа испанцев отдыхала на яхте, но они даже не представляли, какие открытия ждут их впереди и чем это обернется для всего человечества!
-		  </p>
-		</article>
-		<nav class="page-nav">
-		  <ul>
-		    <li><a class="active">1</a></li>
-			<li><a class="next">2</a></li>
-			<li><a class="next">3</a></li>
-			<li><a class="next">4</a></li>
-		  </ul>
-		</nav>
-      </div>	  
+	  
+	  <section class="blog">
+	    <div class="blog__inner">
+	      <article class="blog-article">
+		    <header class="blog-article__header">
+		      <h2 class="blog-article__title">Антон и Надя в Тайланде</h2>
+			  <div class="blog-article__time">Опубликовано: 6 месяцев назад</div>
+		    </header>
+		    <p class="blog-article__intro">Читайте рассказ о том, как семейная пара посещала Тайланд, стараясь максимально избегать избитых туристических мест и районов.</p>		  
+		  </article>
+		  <article class="blog-article">
+		    <header class="blog-article__header">
+		      <h2 class="blog-article__title">Гастрольный тур «Кубанских борщеваров»</h2>
+			  <div class="blog-article__time">Опубликовано: 5 лет назад</div>
+		    </header>
+		    <p class="blog-article__intro">Возрождение культурных традиций уже не за горами. Фолк-металл-рэп-группа из столицы Кубани провела весь год в гастролях по России и ближнему (а также среднему) зарубежью.</p>		  
+		  </article>
+		  <article class="blog-article">
+		    <header class="blog-article__header">
+		      <h2 class="blog-article__title">Чета Болонских в Париже</h2>
+			  <div class="blog-article__time">Опубликовано: 100 лет назад</div>
+		    </header>
+		    <p class="blog-article__intro">Невероятные приключения русских во Франции. Интриги, предательства, погони и, разумеется, убийства. Читайте криминально-исторический трактат в двух томах.</p>		  
+		  </article>
+		  <article class="blog-article">
+		    <header class="blog-article__header">
+		      <h2 class="blog-article__title">Путешествие на яхте сеньора Христофора</h2>
+			  <div class="blog-article__time">Опубликовано: 523 года назад</div>
+		    </header>
+		    <p class="blog-article__intro">Группа испанцев отдыхала на яхте, но они даже не представляли, какие открытия ждут их впереди и чем это обернется для всего человечества!</p>		  
+		  </article>
+		  <div class="blog-pagination">
+		    <ul class="blog-pagination__list">
+		      <li><a class="blog-pagination__item blog-pagination__item--active">1</a></li>
+			  <li><a class="blog-pagination__item">2</a></li>
+			  <li><a class="blog-pagination__item">3</a></li>
+			  <li><a class="blog-pagination__item">4</a></li>
+		    </ul>
+		  </div>
+        </div>
+      </section>	  
 	</main>
 	<footer class="page-footer">
-	  <div class="wrapper">	
-	    <div class="footer-logo"><img src="img/footer-logo.png" alt="Pink logo"></div>
-	    <div class="social-btns">
-	      <a class="social-btn btn-tw" href="">Twitter</a>
-		  <a class="social-btn btn-fb" href="">Facebook</a>
-		  <a class="social-btn btn-yt" href="">YouTube</a>
+	  <div class="page-footer__inner">	
+	    <div class="page-footer__logo"><img src="img/footer-logo.svg" alt="Pink logo"></div>
+	    <div class="page-footer__socials">
+	      <a class="page-footer__soc-btn page-footer__soc-btn--tw" href="">Twitter</a>
+		  <a class="page-footer__soc-btn page-footer__soc-btn--fb" href="">Facebook</a>
+		  <a class="page-footer__soc-btn page-footer__soc-btn--yt" href="">YouTube</a>
 	    </div>
-	    <div class="copyright">Разработано <a href=""><img src="img/logo-html-academy.png" alt="HTML Academy"></a></div>
+	    <div class="page-footer__copyright">Разработано <a href=""><img src="img/logo-html-academy.png" alt="HTML Academy"></a></div>
 	  </div>
 	</footer>
   </body>  
