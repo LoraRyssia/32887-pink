@@ -1,81 +1,84 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta charset="UTF-8">
-	<title>Блог путешественников, пользователей Пинк: Антон и Надя в Тайланде</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <title>Pink</title>
   </head>
   <body>
     <header class="page-header">
-	  <div class="page-header__inner">
-	    <div class="page-header__logo-wrap">
-		  <a class="page-header__logo-link" href="/">
-		    <img src="img/logo.svg" alt="Pink">
-		  </a>
-		</div>		
-	    <div class="page-header__nav-wrap">
-	      <nav class="page-header__nav-menu">
-		    <a class="page-header__menu-toggle page-header__nav-menu-toggle--close" href=""></a>
-		    <ul class="page-header__menu-list">
-			  <li><a href="">Информация</a></li>
-			  <li><a href="">Возможности</a></li>
-			  <li><a href="">Отзывы</a></li>
-			  <li><a href="">Стоимость</a></li>
-			</ul>			
-		  </nav>
-	    </div>
-	  </div>
-	</header>
-	<main>
-	  <section class="page-title">
-	    <div class="page-title__inner">
-	      <h1 class="page-title__text">Блог путешественников, пользователей Пинк</h1>
-		</div>
-	  </section>
-	  
-	  <section class="post">
-	    <div class="post-inner">
-	      <article class="post-article">
-		    <header class="post-article__header">
-		      <h2 class="post-article__title">Антон и Надя в Тайланде</h2>
-			  <div class="post-article__time">Опубликовано: 6 месяцев назад</div> 
-		      <p class="post-article__intro">Читайте рассказ о том, как семейная пара посещала Тайланд, стараясь максимально избегать избитых туристических мест и районов.</p>
-		    </header>		  
-		    <h3 class="post-article__subtitle">Предыстория</h3>
-		    <p class="post-article__text">В Азию нам хотелось попасть уже давно, но все время что-то останавливало. Также не давал покоя вопрос гигиены и чистоты вокруг. Были сомнения и на счет местной еды. Однако, увидев выгодные билеты на <a href="">skyscanner.ru</a> мы все-таки решились!</p>		    
-		    <h3 class="post-article__subtitle">Выбор отеля</h3>
-		    <p class="post-article__text">В Тайланде огромный разброс по стоимости отелей и так же сильно отличаются и они сами. Так как достопримечательности щедро разбросаны по всей стране, то чтобы посетить их все, нужно пожить в нескольких разных городах. В итоге мы остановились на следующих:</p>
-		    <ul class="post-article__list">
-		      <li>Point Yamu by Como (Пхукет)</li>
-			  <li>Amari Vogue Hotel (Краби)</li>
-			  <li>Photo Hotel (Пхукет)</li>
-	        </ul>
-		    <p class="post-article__text">В выборе отелей мы учитывали как расположение, так и отзывы на Tripadvisor. Например, вот, что пишут люди про Point Yamu:</p>
-		    <blockquote class="post-article__quotation">Замечательное место,в которое хочется вернуться обязательно! Персонал отзывчивый и внимательный,еда-потрясающая. Отель расположен в тихом и уединенном месте-в чем вся и прелесть. СПА отличный. Потрясающие виды.<cite>Олег, г. Москва</cite></blockquote>
-		    <h3 class="post-article__subtitle">Местная еда</h3>
-		    <p class="post-article__text">Существует мнение, что вся еда в Тайланде экстремально острая. Это мнение сложилось не напрасно! Но не стоит делать из этого проблему — просто попросите сделать ваше блюдо «not spicy». Желающие могут попробовать жареных тараканчиков. Мы не рискнули.</p>
-		  </article>
-		
-		  <div class="artcl-pagination">
-		    <a class="artcl-pagination__btn artcl-pagination__btn--prev" href="">Пред.</a>
-		    <a class="artcl-pagination__btn artcl-pagination__btn--next" href="">След.</a>
-		    <a class="artcl-pagination__btn artcl-pagination__btn--back" href="">Назад к списку</a>
-		  </div>
-		</div>
-	  </section> 
-	  
-	</main>
-	
-	<footer class="page-footer">
-	  <div class="page-footer__inner">	
-	    <div class="page-footer__logo"><img src="img/footer-logo.svg" alt="Pink logo"></div>
-	    <div class="page-footer__socials">
-	      <a class="page-footer__soc-btn page-footer__soc-btn--tw" href="">Twitter</a>
-		  <a class="page-footer__soc-btn page-footer__soc-btn--fb" href="">Facebook</a>
-		  <a class="page-footer__soc-btn page-footer__soc-btn--yt" href="">YouTube</a>
-	    </div>
-	    <div class="page-footer__copyright">Разработано <a href=""><img src="img/logo-html-academy.png" alt="HTML Academy"></a></div>
-	  </div>
-	</footer>
+      <div class="page-header__inner">
+        <div class="page-header__logo-wrap">
+          <a class="page-header__logo-link" href="/">
+            <img src="img/logo.svg" alt="Pink">
+          </a>
+        </div>    
+        <div class="page-header__nav-wrap">
+          <nav class="page-header__nav-menu">
+            <a class="page-header__menu-toggler" id="toggler" href=""></a>
+            <ul class="page-header__menu-list">
+              <li><a href="">Информация</a></li>
+              <li><a href="">Возможности</a></li>
+              <li><a href="">Отзывы</a></li>
+              <li><a href="">Стоимость</a></li>
+            </ul>     
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+
+      <section class="page-title">
+        <div class="page-title__inner">
+          <h1 class="page-title__text">Блог путешественников, пользователей Пинк</h1>
+        </div>
+      </section>
+    
+      <section class="post-container">
+        <div class="post-container__inner">
+          <article class="post">
+            <header class="post__header">
+              <h2 class="post__title">Антон и Надя в Тайланде</h2>
+              <p class="post__time">Опубликовано: <time datetime="2012-12-23T08:23:11+07:00">6 месяцев назад</time></p> 
+              <p class="post__intro">Читайте рассказ о том, как семейная пара посещала Тайланд, стараясь максимально избегать избитых туристических мест и районов.</p>
+            </header>
+            <div class="post__content">
+              <h3>Предыстория</h3>
+              <p>В Азию нам хотелось попасть уже давно, но все время что-то останавливало. Также не давал покоя вопрос гигиены и чистоты вокруг. Были сомнения и на счет местной еды. Однако, увидев выгодные билеты на <a href="">skyscanner.ru</a> мы все-таки решились!</p>       
+              <h3>Выбор отеля</h3>
+              <p>В Тайланде огромный разброс по стоимости отелей и так же сильно отличаются и они сами. Так как достопримечательности щедро разбросаны по всей стране, то чтобы посетить их все, нужно пожить в нескольких разных городах. В итоге мы остановились на следующих:</p>
+              <ul>
+                <li>Point Yamu by Como (Пхукет)</li>
+                <li>Amari Vogue Hotel (Краби)</li>
+                <li>Photo Hotel (Пхукет)</li>
+              </ul>
+              <p>В выборе отелей мы учитывали как расположение, так и отзывы на Tripadvisor. Например, вот, что пишут люди про Point Yamu:</p>
+              <blockquote>Замечательное место,в которое хочется вернуться обязательно! Персонал отзывчивый и внимательный,еда-потрясающая. Отель расположен в тихом и уединенном месте-в чем вся и прелесть. СПА отличный. Потрясающие виды.<cite>Олег, г. Москва</cite></blockquote>
+              <h3>Местная еда</h3>
+              <p>Существует мнение, что вся еда в Тайланде экстремально острая. Это мнение сложилось не напрасно! Но не стоит делать из этого проблему — просто попросите сделать ваше блюдо «not spicy». Желающие могут попробовать жареных тараканчиков. Мы не рискнули.</p>
+            </div>
+          </article>    
+          <div class="article-pagination">
+            <a class="article-pagination__btn article-pagination__btn--prev" href="">Пред.</a>
+            <a class="article-pagination__btn article-pagination__btn--next" href="">След.</a>
+            <a class="article-pagination__btn article-pagination__btn--back" href="">Назад к списку</a>
+          </div>
+        </div>
+      </section>
+    
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__inner">
+        <div class="page-footer__logo"><img src="img/footer-logo.svg" alt="Pink logo"></div>
+        <ul class="socials">
+          <li><a class="socials__btn socials__btn--tw" href="">Twitter</a></li>
+          <li><a class="socials__btn socials__btn--fb" href="">Facebook</a></li>
+          <li><a class="socials__btn socials__btn--yt" href="">YouTube</a></li>
+        </div>
+        <div class="page-footer__copyright">Разработано <a href=""><img src="img/logo-html-academy.png" alt="HTML Academy"></a></div>
+      </div>
+    </footer>
   </body>  
-	
+</html>  

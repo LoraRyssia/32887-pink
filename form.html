@@ -1,114 +1,147 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta charset="UTF-8">
-	<title>Конкурс на самое безбашеное путешествие с Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <title>Pink</title>
   </head>
   <body>
     <header class="page-header">
-	  <div class="page-header__inner">
-	    <div class="page-header__logo-wrap">
-		  <a class="page-header__logo-link" href="/">
-		    <img src="img/logo.svg" alt="Pink">
-		  </a>
-		</div>		
-	    <div class="page-header__nav-wrap">
-	      <nav class="page-header__nav-menu">
-		    <a class="page-header__menu-toggle page-header__nav-menu-toggle--close" href=""></a>
-		    <ul class="page-header__menu-list">
-			  <li><a href="">Информация</a></li>
-			  <li><a href="">Возможности</a></li>
-			  <li><a href="">Отзывы</a></li>
-			  <li><a href="">Стоимость</a></li>
-			</ul>			
-		  </nav>
-	    </div>
-	  </div>
-	</header>
-	<main>
-	  <section class="page-title">
-	    <div class="page-title__inner">
-	      <h1 class="page-title__text">Конкурс на самое безбашеное путешествие с Пинк</h1>
-		</div>
-	  </section>
-	  
-	  <section class="form">
-	    <div class="form__inner">
-	      <div class="form__intro-text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </div>
-		  <form class="form-pink">
-		    <div class="form-pink__main-data">
-		      <label for="name">Имя: *</label>
-		      <input id="name" name="name" type=text placeholder="Введите ваше имя" required>
-		      <label for="lname">Фамилия: *</label>
-		      <input id="lname" name="last-name" type=text placeholder="Укажите фамилию" required>
-		      <label for="fname">Отчество:</label>
-		      <input id="fname" name="father-name" type=text placeholder="Ну и отчество тоже">
-		    </div>
-			<fieldset class="form-pink__application-choice">
-		      <legend class="form-pink__legend">С каким приложением путешествовали? *</legend>
-		      <input id="app-ios" name="application" type="radio" value="ios"><label for="app-ios">Pink для iOS</label>
-		      <input id="app-andr" name="application" type="radio" value="andr"><label for="app-andr">Pink на Android</label>
-		      <input id="app-wind" name="application" type="radio" value="wind"><label for="app-wind">Windows Phone</label>
-		    </fieldset>
-		    <fieldset class="form-pink__dates">
-		      <legend class="form-pink__legend">Когда вы путешествовали? *</legend>
-		      <input id="depart" name="departure" type="text" value="1 апреля 2015">
-		      <label for="depart">дата выезда</label>
-		      <input id="duratn" name="duration" type="text" value="10 дней">
-		      <label for="duratn">Продолжительность</label>
-		      <input id="arrvl" name="arrival" type="text" value="1 апреля 2015">
-		      <label for="arrvl">Дата Возвращения</label>
-		    </fieldset>
-		    <fieldset class="form-pink__fellows">
-		      <legend class="form-pink__legend">Количество попутчиков *</legend>
-		      <input name="fellows" type="text" value="2 чел">
-		      <hr>		  
-		      <label for="num-1">№</label> <input id="num-1" name="number-1" type="text" value="1" readonly>
-		      <label for="name-1">Имя: *</label> <input id="name-1" name="name-1" type="text" placeholder="Введите ваше имя">
-		      <label for="lname-1">ПРОЗВИЩЕ:</label> <input id="lname-1" name="lname-1" type="text" placeholder="Ну как же без этого!">		  
-		      <label for="num-2">№</label> <input id="num-2" name="number-2" type="text" value="2" readonly>
-		      <label for="name-2">Имя: *</label> <input id="name-2" name="name-2" type="text" placeholder="Введите ваше имя">
-		      <label for="lname-2">ПРОЗВИЩЕ:</label> <input id="lname-2" name="lname-2" type="text" placeholder="Ну как же без этого!">		  
-		    </fieldset>
-		    <fieldset class="form-pink__achievements">
-		      <legend class="form-pink__legend">Ваши безбашенные достижения в путешествии</legend>		  
-		      <input type="checkbox" id="achieve-shark" name="achieve-shark" checked><label for="achieve-shark">Сделал селфи с акулой</label>
-		      <input type="checkbox" id="achieve-beach" name="achieve-beach" checked><label for="achieve-beach">Обгорел на пляже</label>
-		      <input type="checkbox" id="achieve-chak" name="achieve-chak"><label for="achieve-chak">Видел Чака Норриса</label>
-		      <input type="checkbox" id="achieve-gifts" name="achieve-gifts"><label for="achieve-gifts">Накупил сувениров</label>
-		      <input type="checkbox" id="achieve-tower" name="achieve-tower" checked><label for="achieve-tower">Удержал башню</label>
-		      <input type="checkbox" id="achieve-hotel" name="achieve-hotel"><label for="achieve-hotel">Разгромил отель</label>
-		    </fieldset>
-		    <fieldset class="form-pink__photos">
-		      <legend class="form-pink__legend">ВАШИ ФОТОГРАФИИ из поездки *</legend>		  
-		      <input type="file" name="photo" enctype="multipart/form-data" accept="image/*" multiple>
-		      <hr>
-		      <div class="form-pink__pict"><img src="img/btn-del-pic.png" alt="удалить"><img src="img/img-1.jpg" alt="IMG-1.JPG">IMG-1.JPG</div>
-		      <div class="form-pink__pict"><img src="img/btn-del-pic.png" alt="удалить"><img src="img/img-2.jpg" alt="IMG-2.JPG">IMG-2.JPG</div>
-		      <div class="form-pink__pict"><img src="img/btn-del-pic.png" alt="удалить"><img src="img/img-3.jpg" alt="IMG-3.JPG">IMG-3.JPG</div>
-		      <div class="form-pink__pict"><img src="img/btn-del-pic.png" alt="удалить"><img src="img/img-4.jpg" alt="IMG-4.JPG">IMG-4.JPG</div>
-		      <div class="form-pink__pict"><img src="img/btn-del-pic.png" alt="удалить"><img src="img/img-5.jpg" alt="IMG-5.JPG">IMG-5.JPG</div>
-		      <div class="form-pink__pict"><img src="img/btn-del-pic.png" alt="удалить"><img src="img/img-6.jpg" alt="IMG-6.JPG">IMG-6.JPG</div>
-		      <div class="form-pink__pict"><img src="img/btn-del-pic.png" alt="удалить"><img src="img/img-7.jpg" alt="IMG-7.JPG">IMG-7.JPG</div>
-		      <div class="form-pink__pict"><img src="img/btn-del-pic.png" alt="удалить"><img src="img/img-8.jpg" alt="IMG-8.JPG">IMG-8.JPG</div>
-		    </fieldset>
-		    <input class="button-send" id="submit-form" name="submit-form" type="submit" value="Отправить форму">  
-		    <div class="form-pink__note">* — обязательные поля</div>		  
-		</form>	    
-	  </div>	   
-	</main>
-	
-	<footer class="page-footer">
-	  <div class="page-footer__inner">	
-	    <div class="page-footer__logo"><img src="img/footer-logo.svg" alt="Pink logo"></div>
-	    <div class="page-footer__socials">
-	      <a class="page-footer__soc-btn page-footer__soc-btn--tw" href="">Twitter</a>
-		  <a class="page-footer__soc-btn page-footer__soc-btn--fb" href="">Facebook</a>
-		  <a class="page-footer__soc-btn page-footer__soc-btn--yt" href="">YouTube</a>
-	    </div>
-	    <div class="page-footer__copyright">Разработано <a href=""><img src="img/logo-html-academy.png" alt="HTML Academy"></a></div>
-	  </div>
-	</footer>
+      <div class="page-header__inner">
+        <div class="page-header__logo-wrap">
+          <a class="page-header__logo-link" href="/">
+            <img src="img/logo.svg" alt="Pink">
+          </a>
+        </div>    
+        <div class="page-header__nav-wrap">
+          <nav class="page-header__nav-menu">
+            <a class="page-header__menu-toggler" id="toggler" href=""></a>
+            <ul class="page-header__menu-list">
+              <li><a href="">Информация</a></li>
+              <li><a href="">Возможности</a></li>
+              <li><a href="">Отзывы</a></li>
+              <li><a href="">Стоимость</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+
+      <section class="page-title">
+        <div class="page-title__inner">
+          <h1 class="page-title__text">Конкурс на самое безбашеное путешествие с Пинк</h1>
+        </div>
+      </section>
+    
+      <section class="form-pink">
+        <div class="form-pink__inner">
+          <p class="form-pink__intro-text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </p>
+          <form class="form">
+            <fieldset class="form__main-data">
+              <div class="form__gr-data">
+                <label class="form__label"><span class="form__label-span">Имя: * </span><input name="name" type=text placeholder="Введите ваше имя" required></label>
+              </div>
+              <div class="form__gr-data">
+                <label class="form__label"><span class="form__label-span">Фамилия: * </span><input name="last-name" type=text placeholder="Укажите фамилию" required></label>
+              </div>
+              <div class="form__gr-data">
+                <label class="form__label"><span class="form__label-span">Отчество: </span><input name="father-name" type=text placeholder="Ну и отчество тоже"></label>
+              </div>
+            </fieldset>
+            <fieldset class="form__application-choice">
+              <legend class="form__legend">С каким приложением путешествовали? *</legend>
+              <div class="form__gr-choice">
+                <label class="form__label-choice"><input name="application" type="radio" value="ios"><span class="form__choice-span">Pink для iOS</span></label>
+              </div>
+              <div class="form__gr-choice">
+                <label class="form__label-choice"><input name="application" type="radio" value="andr"><span class="form__choice-span">Pink на Android</span></label>
+              </div>
+              <div class="form__gr-choice">
+                <label class="form__label-choice"><input name="application" type="radio" value="wind"><span class="form__choice-span">Windows Phone</span></label>
+              </div>
+            </fieldset>
+            <fieldset class="form__dates">
+              <legend class="form__legend">Когда вы путешествовали? *</legend>
+                <div class="form__gr-dates">
+                  <label class="form__label-date"><input name="departure" type="text" value="1 апреля 2015"><span class="form__date-span">дата выезда</span></label>
+                </div>
+                <div class="form__gr-dates">
+                  <a class="form__days-incr" href="">+</a>
+                  <label class="form__label-date"><input name="duration" type="text" value="10 дней"><span class="form__date-span">Продолжительность</span></label>
+                  <a class="form__days-decr" href="">-</a>
+                </div>
+                <div class="form__gr-dates">
+                  <label class="form__label-date"><input name="arrival" type="text" value="1 апреля 2015" readonly><span class="form__date-span">Дата Возвращения</span></label>
+                </div>
+            </fieldset>
+            <fieldset class="form__fellows">
+              <legend class="form__legend">Количество попутчиков *</legend>
+              <div class="form__fellows-counter">
+                <a class="form__flw-incr" href=""></a>
+                <input name="fellows" type="text" value="2 чел">
+                <a class="form__flw-decr" href=""></a>
+              </div>
+              <ol class="form__fellow">
+                <li>
+                  <label class="form__flw-label"><span class="form__flw-span">№</span><input name="number" type="text" value="1" readonly></label>
+                  <label class="form__flw-label"><span class="form__flw-span">Имя: * </span><input name="name" type="text" placeholder="Введите ваше имя"></label> 
+                  <label class="form__flw-label"><span class="form__flw-span">Прозвище: </span><input name="lname" type="text" placeholder="Ну как же без этого!"></label> 
+                  <a class="form__flw-del" href="">удалить</a>
+                </li>
+              </ol>
+            </fieldset>
+            <fieldset class="form__achievements">
+              <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+              <div class="form__gr-achieve">
+                <label class="form__achieve-label"><input name="achieve-shark" type="checkbox" checked><span class="form__achieve-span">Сделал селфи с акулой</span></label>
+              </div>
+              <div class="form__gr-achieve">
+                <label class="form__achieve-label"><input name="achieve-beach" type="checkbox" checked><span class="form__achieve-span">Обгорел на пляже</span></label>
+              </div>
+              <div class="form__gr-achieve">
+                <label class="form__achieve-label"><input name="achieve-chak" type="checkbox"><span class="form__achieve-span">Видел Чака Норриса</span></label>
+              </div>
+              <div class="form__gr-achieve">
+                <label class="form__achieve-label"><input name="achieve-gifts" type="checkbox"><span class="form__achieve-span">Накупил сувениров</span></label>
+              </div>
+              <div class="form__gr-achieve">
+                <label class="form__achieve-label"><input name="achieve-tower" type="checkbox" checked><span class="form__achieve-span">Удержал башню</span></label>
+              </div>
+              <div class="form__gr-achieve">
+                <label class="form__achieve-label"><input name="achieve-hotel" type="checkbox"><span class="form__achieve-span">Разгромил отель</span></label>
+              </div>
+            </fieldset>
+            <fieldset class="form__photos">
+              <legend class="form__legend">Ваши фотографии из поездки *</legend>
+              <input type="file" name="photo" enctype="multipart/form-data" accept="image/*" multiple>
+              <div class="form__pict"><a class="form__pict-del" href="">удалить</a><img src="img/img-1.jpg"><span class="form__photo-name">IMG-1.JPG</span></div>
+              <div class="form__pict"><a class="form__pict-del" href="">удалить</a><img src="img/img-2.jpg"><span class="form__photo-name">IMG-2.JPG</span></div>
+              <div class="form__pict"><a class="form__pict-del" href="">удалить</a><img src="img/img-3.jpg"><span class="form__photo-name">IMG-3.JPG</span></div>
+              <div class="form__pict"><a class="form__pict-del" href="">удалить</a><img src="img/img-4.jpg"><span class="form__photo-name">IMG-4.JPG</span></div>
+              <div class="form__pict"><a class="form__pict-del" href="">удалить</a><img src="img/img-5.jpg"><span class="form__photo-name">IMG-5.JPG</span></div>
+              <div class="form__pict"><a class="form__pict-del" href="">удалить</a><img src="img/img-6.jpg"><span class="form__photo-name">IMG-6.JPG</span></div>
+              <div class="form__pict"><a class="form__pict-del" href="">удалить</a><img src="img/img-7.jpg"><span class="form__photo-name">IMG-7.JPG</span></div>
+              <div class="form__pict"><a class="form__pict-del" href="">удалить</a><img src="img/img-8.jpg"><span class="form__photo-name">IMG-8.JPG</span></div>
+            </fieldset>
+            <input class="btn" type="submit" value="Отправить форму">
+            <div class="form__footer">* — обязательные поля</div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__inner">
+        <div class="page-footer__logo"><img src="img/footer-logo.svg" alt="Pink logo"></div>
+        <ul class="socials">
+          <li><a class="socials__btn socials__btn--tw" href="">Twitter</a></li>
+          <li><a class="socials__btn socials__btn--fb" href="">Facebook</a></li>
+          <li><a class="socials__btn socials__btn--yt" href="">YouTube</a></li>
+        </div>
+        <div class="page-footer__copyright">Разработано <a href=""><img src="img/logo-html-academy.png" alt="HTML Academy"></a></div>
+      </div>
+    </footer>
   </body>  
-	
+</html> 
