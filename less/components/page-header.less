@@ -1,0 +1,47 @@
+.page-header {
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  padding: 15px 0;
+  background: rgba(0, 0, 0,.3);
+  color: #fff;
+
+    &__inner {
+      .inner-mb;
+    }
+
+    &__logo-wrap {
+      float: left;
+    }
+
+    &__logo-mb {
+      
+      @media screen and (min-width: 700px) {
+      display: none;
+      }
+    }
+
+    &__logo-tb {
+      display: none;
+
+      @media (min-width: 700px) and (max-width: 1200px) {
+      display: inline-block;
+      }
+    }
+
+    &__logo-dt {
+      display: none;
+      @media screen and (min-width: 1200px) {
+      display: inline-block;
+      }
+    }
+
+    &__nav-wrap {
+      float: right;
+    }
+
+    &__nav-menu {
+      display: none;
+    }
+}
+

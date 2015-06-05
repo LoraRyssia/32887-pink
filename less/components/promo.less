@@ -1,0 +1,70 @@
+.promo {
+  background-color: @dark-blue;  
+  text-align: center;
+  color: white;
+
+    &__image-bg {
+      height: 460px;
+      background: 
+    url(../img/iphone-hand-mobile.png) no-repeat 0 100%,
+    url(../img/background-mobile@1x.jpg) no-repeat 50% 50%;
+    }
+
+    &__inner {
+      .inner-mb;
+    }
+
+    &__slogan {
+      padding-top: 80px;
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 28px;
+    }
+
+    &__apps {
+      padding: 25px 0;
+    }
+
+    &__icons {
+      padding: 25px 0;
+    }
+
+    &__icon {
+      display: inline-block;
+      width: 45px;
+      height: 57px;
+      margin-right: 30px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &>span {
+          display: none;
+        }
+
+        &--apple {
+          background: url(../img/sprite-promo-icons.png) no-repeat 0 0;
+        }
+
+        &--andr {
+          background: url(../img/sprite-promo-icons.png) no-repeat -80px 0;
+        }
+
+        &--wins {
+          background: url(../img/sprite-promo-icons.png) no-repeat -160px 0;
+        }
+    }
+
+    &__note {
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 300;
+
+    }
+
+}
+
+.promo-index {
+  display: none;
+}
